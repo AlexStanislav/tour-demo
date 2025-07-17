@@ -1,0 +1,72 @@
+.locations__buttons {
+    display: flex;
+    gap: 0.5em;
+}
+
+.locations__button {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: all ease 0.1s;
+    margin-top: 1em;
+}
+
+.locations__button--active,
+.locations__button:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.locations__cards {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1em;
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+.locations__card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    cursor: pointer;
+    position: relative;
+}
+
+.locations__title {
+    display: flex;
+    align-items: center;
+    color: var(--dark-blue);
+}
+
+.locations__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.35em;
+}
+
+.locations__flag {
+    width: 14px;
+    height: 10px;
+    margin-left: 0.25em;
+}
+
+.locations__city,
+.locations__category {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 412px) {
+    .locations__card {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,107 @@
+.destinations {
+    width: 70%;
+    min-height: 100vh;
+    margin: 70px auto 0 auto;
+    padding: 2em 0;
+    display: flex;
+    gap: 3em;
+}
+
+.destinations [class*="title"] {
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    font-family: "Dancing Script", cursive;
+}
+
+.filters {
+    flex: 0.5;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.destinations__list {
+    flex: 3;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search__input {
+    flex: 3;
+    height: 35px;
+    border: 1px solid var(--blue);
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    background-color: transparent;
+    color: var(--blue);
+    font-size: 1em;
+    margin: 1em 0;
+    box-sizing: border-box;
+    padding-left: 0.5em;
+}
+
+.search__icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+}
+.search__icon .icon__search {
+    font-size: 0.65em;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.filters__title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: var(--dark-blue);
+}
+
+.price__ranges {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__input {
+    width: 20%;
+    padding: 0.25em;
+    border-radius: 0.25em;
+    border: 1px solid var(--blue);
+    box-sizing: border-box;
+}
+
+.rating,
+.country,
+.category,
+.location,
+.amenities {
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
+
+
+.destinations__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}

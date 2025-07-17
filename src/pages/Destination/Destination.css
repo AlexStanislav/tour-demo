@@ -1,0 +1,244 @@
+.destination {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.destination__title {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.destination__image {
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.destination__name {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-size: 4em;
+}
+
+.destination__location {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.destination__category {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+.destination__content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destination__description {
+    width: 700px;
+}
+
+.destination__description {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    color: var(--blue);
+}
+
+.destination__description h3 {
+    font-size: 1.5em;
+    color: var(--dark-blue);
+    font-family: 'Dancing Script', cursive;
+}
+
+.amenities__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.25em;
+}
+
+.list__item {
+    display: flex;
+    gap: 0.5em;
+    font-size: 0.9em;
+    color: var(--dark-blue);
+}
+
+.destination__price {
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid var(--dark-blue);
+    border-radius: 0.25em;
+    padding: 1em;
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin: 0 auto;
+    font-size: 1.5em;
+    gap: 0.15em;
+}
+
+.per-night {
+    font-size: 0.6em;
+    font-weight: 500;
+    color: #6e6e6e;
+    line-height: 1.5em;
+}
+
+.destination__gallery {
+    width: 70%;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.gallery__title {
+    color: var(--dark-blue);
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.gallery__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+    justify-content: center;
+}
+
+.gallery__wrapper {
+    transform: rotateZ(5deg);
+    outline: 10px solid #efefef;
+    outline-offset: -6px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__lightbox {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.lightbox__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2em;
+}
+
+.lightbox__image {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.destination__form {
+    width: 40%;
+    margin: 5em auto 1em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+}
+
+.form__title {
+    color: var(--blue);
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 0.5em;
+}
+
+.destination__form .float-element {
+    margin: 0.25em;
+    height: 40px;
+    border-radius: 0.25em;
+    outline: 1px solid var(--dark-blue);
+}
+.destination__form .float-element__input {
+    width: 100%;
+    border-radius: 0.25em;
+    height: 25px;
+}
+
+
+.destination__form .button {
+    width: 99%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.5em 0;
+}
+
+.destination__total{
+    width: 100%;
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin: 1em auto 2em auto;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 412px), screen and (max-height: 812px) {
+    .lightbox__image {
+        width: 80%;
+        height: 350px;
+    }
+}

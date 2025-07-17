@@ -1,0 +1,117 @@
+.float-element {
+    min-width: 12vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 0 0.25em;
+}
+
+.float-element__label {
+    position: absolute;
+    left: 0.5em;
+    top: 20%;
+    transition: all ease 0.2s;
+    font-family: 'Dancing Script', cursive;
+    color: var(--blue);
+    pointer-events: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.float-element__input {
+    height: 45%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    padding: 0.25em;
+    color: var(--blue);
+}
+
+.float-element__input[type="date"] {
+    color: #fff;
+}
+
+.float-element__input[type="date"]:valid,
+.float-element__input[type="date"]:focus {
+    color: var(--blue);
+}
+
+.float-element__input:valid+.float-element__label,
+.float-element__input:focus+.float-element__label {
+    opacity: 0;
+}
+
+.float-element__date:valid,
+.float-element__date:focus {
+    color: var(--blue);
+}
+
+.float-element__container {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    border-radius: 0.25em;
+    overflow: hidden;
+}
+
+.float-element__autocomplete {
+    max-height: 20vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 0.9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #afafaf;
+    border-radius: 0.25em;
+}
+
+.autocomplete__item {
+    font-size: 1.2em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.autocomplete__item:hover {
+    background-color: #efefef;
+}
+
+@media screen and (max-width: 412px), screen and (max-width: 812px) {
+    .float-element {
+        min-width: 100%;
+    }
+
+    .float-element__label {
+        font-size: 1em;
+        color: var(--blue);
+        left: 1em;
+    }
+
+    .float-element__input {
+        width: 100%;
+        font-size: 1em;
+        background-color: #fff;
+        padding: 0.65em;
+        color: var(--blue);
+        border-radius: 0.25em;
+    }
+
+    .float-element__input[type="date"] {
+        color: #fff;
+    }
+
+    .float-element__input[type="date"]:valid,
+    .float-element__input[type="date"]:focus {
+        color: #fff;
+    }
+    
+    .float-element__autocomplete {
+        position: relative;
+        z-index: 5;
+    }
+}

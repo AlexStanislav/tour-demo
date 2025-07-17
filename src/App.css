@@ -1,0 +1,12 @@
+.main {
+    min-height: 100vh;
+}
+
+.not-found {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}

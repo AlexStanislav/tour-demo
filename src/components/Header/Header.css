@@ -1,0 +1,148 @@
+.header {
+    width: calc(100% - 8em);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 4em;
+}
+
+.header--solid{
+    background-color: var(--dark-blue);
+    padding: 1em 4em;
+}
+
+.header__title {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    cursor: pointer;
+}
+
+.header__text {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.icon__menu {
+    display: none;
+}
+
+.header__logo {
+    width: 1em;
+    height: 1em;
+}
+
+
+.mobile__menu {
+    display: none;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-weight: 900;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    background-color: #fff;
+    color: var(--blue);
+}
+
+@media screen and (max-width: 412px), screen and (max-width: 812px) {
+    .header {
+        width: 100%;
+        padding: 0.5em 1em;
+        background-color: var(--dark-blue);
+        box-sizing: border-box;
+    }
+    .header__title {
+        width: 100%;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .icon__menu {
+        display: initial;
+        width: 1.5em;
+        height: 1.5em;
+        cursor: pointer;
+    }
+    
+    .nav {
+        display: none;
+    }
+
+    .mobile__menu {
+        display: flex;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        gap: 1em;
+        height: 100vh;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 999;
+        transition: all ease 0.3s;
+    }
+
+    .mobile__menu--open {
+        left: 0;
+    }
+
+    .menu__title {
+        color: var(--dark-blue);
+        font-family: 'Dancing Script', cursive;
+        padding: 0.5em;
+        font-weight: 700;
+    }
+
+    .menu__content {
+        width: 50%;
+        background: #fff;
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }
+
+    .menu__list {
+        list-style: none;
+        margin: 0 2em;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .menu__link {
+        text-decoration: none;
+        color: var(--blue);
+    }
+    
+}
