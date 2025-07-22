@@ -9,6 +9,7 @@ import type { DestinationType } from "./utils/types";
 import Footer from "./components/Footer/Footer";
 import Destination from "./pages/Destination/Destination";
 import Destinations from "./pages/Destinations/Destinations";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   const [products, setProducts] = useState<DestinationType[] | null>([]);
@@ -29,6 +30,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/destinations" element={<Destinations />} />
               <Route path="/destination/:id" element={<Destination />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<h1 className="not-found">404</h1>} />
             </Routes>
           </DestinationContext.Provider>
