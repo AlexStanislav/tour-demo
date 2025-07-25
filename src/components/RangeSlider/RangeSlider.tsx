@@ -22,16 +22,28 @@ function RangeSlider({ min, max, inputAction }: RangeSliderProps) {
     }
   }
 
+  const range = max - min;
+
+  const normalizedMinValue = (minValue - min) / range;
+  const normalizedMaxValue = (maxValue - min) / range;
+
+  const trackPosition = Math.floor(normalizedMinValue * 100);
+  const trackWidth = Math.floor(
+    (normalizedMaxValue - normalizedMinValue) * 100
+  );
+
   return (
     <div className="range">
       <div className="range__inputs">
-        <div
-          className="range__track"
-          style={{
-            left: `${(minValue / (max - min)) * 100}%`,
-            width: `${((maxValue - minValue) / (max - min)) * 100}%`,
-          }}
-        ></div>
+        <div className="range__track">
+          <div
+            className="track__value"
+            style={{
+              left: `${trackPosition}%`,
+              width: `${trackWidth}%`,
+            }}
+          ></div>
+        </div>
         <input
           type="range"
           className="range__input range__min"

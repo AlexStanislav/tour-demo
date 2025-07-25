@@ -35,6 +35,7 @@ export interface CheckBoxProps {
   type?: string;
   label: string;
   name: string;
+  checked: boolean;
   inputAction: (value: {
     name: string;
     checked: boolean;

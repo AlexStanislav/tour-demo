@@ -7,7 +7,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 30px;
+    margin-bottom: 2em;
 }
 
 .range__input {
@@ -24,16 +24,25 @@
 }
 
 .range__track{
-    width: 90%;
-    left: 5%;
+    width: 97%;
+    left: 2%;
     height: 8px;
-    background-color: var(--blue);
+    overflow: hidden;
+    outline: 1px solid var(--dark-blue);
     position: absolute;
+    border-radius: 5px;
 }
 
-.range__min {
-    border: 1px solid var(--blue);
+.track__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--blue);
+    z-index: 0;
+    border-radius: 5px;
 }
+
 
 .range__min::-webkit-slider-thumb,
 .range__min::-moz-range-thumb,

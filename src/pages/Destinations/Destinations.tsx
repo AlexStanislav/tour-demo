@@ -139,11 +139,33 @@ function Destinations() {
         filters.amenities.length === 0 ||
         filters.amenities.every((amenity) => dest.amenities.includes(amenity));
 
-      return searchMatch && ratingMatch && priceMatch && countryMatch && categoryMatch && locationMatch && amenitiesMatch;
+      return (
+        searchMatch &&
+        ratingMatch &&
+        priceMatch &&
+        countryMatch &&
+        categoryMatch &&
+        locationMatch &&
+        amenitiesMatch
+      );
     });
     console.log(filteredDestinations);
     setDisplayDestinations(filteredDestinations);
   }, [filters, destinations]);
+
+  function clearFilter(filterKey: keyof FiltersType) {
+    if (typeof filters[filterKey] === "number") {
+      setFilters((prevFilters) => ({
+        ...prevFilters,
+        [filterKey]: 0,
+      }));
+    } else {
+      setFilters((prevFilters) => ({
+        ...prevFilters,
+        [filterKey]: [],
+      }));
+    }
+  }
 
   return (
     <section className="destinations">
@@ -171,6 +193,7 @@ function Destinations() {
 
         <div className="rating">
           <h3 className="filters__title">Rating</h3>
+          {filters.rating > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("rating")}></span>}
           {[...Array(5)].map((_, index) => (
             <CheckBox
               type="radio"
@@ -179,6 +202,7 @@ function Destinations() {
                 .fill("⭐")
                 .join("")}
               name="rating"
+              checked={index + 1 === filters.rating}
               inputAction={handleFilter}
             />
           ))}
@@ -186,11 +210,13 @@ function Destinations() {
 
         <div className="country">
           <h3 className="filters__title">Country</h3>
+          {filters.country.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("country")}></span>}
           {countries().map((country) => (
             <CheckBox
               key={country}
               label={country}
               name="country"
+              checked={filters.country.includes(country)}
               inputAction={handleFilter}
             />
           ))}
@@ -198,11 +224,13 @@ function Destinations() {
 
         <div className="category">
           <h3 className="filters__title">Accommodation</h3>
+          {filters.category.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("category")}></span>}
           {accomodation().map((type) => (
             <CheckBox
               key={type}
               label={type}
               name="category"
+              checked={filters.category.includes(type)}
               inputAction={handleFilter}
             />
           ))}
@@ -210,11 +238,13 @@ function Destinations() {
 
         <div className="location">
           <h3 className="filters__title">Location</h3>
+          {filters.location.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("location")}></span>}
           {locations().map((location) => (
             <CheckBox
               key={location}
               label={location}
               name="location"
+              checked={filters.location.includes(location)}
               inputAction={handleFilter}
             />
           ))}
@@ -222,11 +252,13 @@ function Destinations() {
 
         <div className="amenities">
           <h3 className="filters__title">Amenities</h3>
+          {filters.amenities.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("amenities")}></span>}
           {amenities().map((amenity) => (
             <CheckBox
               key={amenity}
               label={amenity}
               name="amenities"
+              checked={filters.amenities.includes(amenity)}
               inputAction={handleFilter}
             />
           ))}
