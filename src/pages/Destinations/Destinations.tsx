@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useDestinations } from "../../store/appStore";
 import RangeSlider from "../../components/RangeSlider/RangeSlider";
 import CheckBox from "../../components/CheckBox/CheckBox";
-import DestinationCard from "../../components/DestinationCard/DestinationCard";
+import DestinationsList from "../../components/DestinationsList/DestinationsList";
 import { InView } from "react-intersection-observer";
 import type { FiltersType } from "../../utils/types";
 
@@ -149,7 +149,6 @@ function Destinations() {
         amenitiesMatch
       );
     });
-    console.log(filteredDestinations);
     setDisplayDestinations(filteredDestinations);
   }, [filters, destinations]);
 
@@ -175,6 +174,7 @@ function Destinations() {
             <i className="icon__search"></i>
           </div>
           <input
+            data-testid="search-input"
             className="search__input"
             type="text"
             placeholder="Search destinations..."
@@ -193,7 +193,12 @@ function Destinations() {
 
         <div className="rating">
           <h3 className="filters__title">Rating</h3>
-          {filters.rating > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("rating")}></span>}
+          {filters.rating > 0 && (
+            <span
+              className="icon__clear-filter"
+              onClick={() => clearFilter("rating")}
+            ></span>
+          )}
           {[...Array(5)].map((_, index) => (
             <CheckBox
               type="radio"
@@ -210,7 +215,12 @@ function Destinations() {
 
         <div className="country">
           <h3 className="filters__title">Country</h3>
-          {filters.country.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("country")}></span>}
+          {filters.country.length > 0 && (
+            <span
+              className="icon__clear-filter"
+              onClick={() => clearFilter("country")}
+            ></span>
+          )}
           {countries().map((country) => (
             <CheckBox
               key={country}
@@ -224,7 +234,12 @@ function Destinations() {
 
         <div className="category">
           <h3 className="filters__title">Accommodation</h3>
-          {filters.category.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("category")}></span>}
+          {filters.category.length > 0 && (
+            <span
+              className="icon__clear-filter"
+              onClick={() => clearFilter("category")}
+            ></span>
+          )}
           {accomodation().map((type) => (
             <CheckBox
               key={type}
@@ -238,7 +253,12 @@ function Destinations() {
 
         <div className="location">
           <h3 className="filters__title">Location</h3>
-          {filters.location.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("location")}></span>}
+          {filters.location.length > 0 && (
+            <span
+              className="icon__clear-filter"
+              onClick={() => clearFilter("location")}
+            ></span>
+          )}
           {locations().map((location) => (
             <CheckBox
               key={location}
@@ -252,7 +272,12 @@ function Destinations() {
 
         <div className="amenities">
           <h3 className="filters__title">Amenities</h3>
-          {filters.amenities.length > 0 && <span className="clear-filter__icon" onClick={() => clearFilter("amenities")}></span>}
+          {filters.amenities.length > 0 && (
+            <span
+              className="icon__clear-filter"
+              onClick={() => clearFilter("amenities")}
+            ></span>
+          )}
           {amenities().map((amenity) => (
             <CheckBox
               key={amenity}
@@ -266,11 +291,10 @@ function Destinations() {
       </nav>
       <section className="destinations__list">
         <header className="destinations__header"></header>
-        <div className="destinations__cards">
-          {displayDestinations.slice(0, loadedIndex).map((destination) => (
-            <DestinationCard key={destination.id} destination={destination} />
-          ))}
-        </div>
+          <DestinationsList
+            destinations={displayDestinations}
+            loadedIndex={loadedIndex}
+          />
         <div className="destinations__load">
           <InView
             as="div"

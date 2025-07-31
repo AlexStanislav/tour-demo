@@ -100,15 +100,7 @@
 }
 
 
-.destinations__cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 1em;
-}
-
-
-.clear-filter__icon {
+.icon__clear-filter {
     position: absolute;
     top: 0.5em;
     right: 1em;

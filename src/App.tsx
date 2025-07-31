@@ -10,9 +10,11 @@ import Footer from "./components/Footer/Footer";
 import Destination from "./pages/Destination/Destination";
 import Destinations from "./pages/Destinations/Destinations";
 import Contact from "./pages/Contact/Contact";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const [products, setProducts] = useState<DestinationType[] | null>([]);
+  const location = useLocation();
 
   useEffect(() => {
     fetch("/MOCK_DATA.json")
@@ -36,7 +38,7 @@ function App() {
           </DestinationContext.Provider>
         </DestinationSearchProvider>
       </main>
-      <Footer />
+      {location.pathname !== "/dashboard" && <Footer />}
     </>
   );
 }

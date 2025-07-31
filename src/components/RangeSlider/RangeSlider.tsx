@@ -35,9 +35,10 @@ function RangeSlider({ min, max, inputAction }: RangeSliderProps) {
   return (
     <div className="range">
       <div className="range__inputs">
-        <div className="range__track">
+        <div className="range__track" data-testid="range-track">
           <div
             className="track__value"
+            data-testid="track-value"
             style={{
               left: `${trackPosition}%`,
               width: `${trackWidth}%`,
@@ -45,6 +46,7 @@ function RangeSlider({ min, max, inputAction }: RangeSliderProps) {
           ></div>
         </div>
         <input
+          data-testid="min-input"
           type="range"
           className="range__input range__min"
           step={100}
@@ -54,6 +56,7 @@ function RangeSlider({ min, max, inputAction }: RangeSliderProps) {
           onChange={handleMinChange}
         />
         <input
+          data-testid="max-input"
           type="range"
           className="range__input range__max"
           step={10}
@@ -63,9 +66,9 @@ function RangeSlider({ min, max, inputAction }: RangeSliderProps) {
           onChange={handleMaxChange}
         />
       </div>
-      <div className="range__values">
-        <span className="range__value">{minValue}</span>
-        <span className="range__value">{maxValue}</span>
+      <div className="range__values" data-testid="range-values">
+        <span className="range__value" data-testid="min-value">{minValue}</span>
+        <span className="range__value" data-testid="max-value">{maxValue}</span>
       </div>
     </div>
   );

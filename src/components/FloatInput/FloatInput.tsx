@@ -43,6 +43,7 @@ function FloatInput({
   return (
     <div className="float-element">
       <input
+        data-testid={`test-${inputID}`}
         className="float-element__input"
         value={value}
         ref={inputRef}
@@ -55,10 +56,19 @@ function FloatInput({
         {labelString}
       </label>
       {showAutocomplete && (
-        <div ref={autocompleteRef} className="float-element__container">
-          <ul className="float-element__autocomplete">
+        <div
+          ref={autocompleteRef}
+          className="float-element__container"
+          data-testid="autocomplete-container"
+        >
+          <ul
+            role="listbox"
+            className="float-element__autocomplete"
+            data-testid="autocomplete"
+          >
             {autocompleteValues?.map((value, index) => (
               <li
+                data-testid="autocomplete-item"
                 className="autocomplete__item"
                 key={index}
                 onClick={() => selectAutocompleteValue(value)}

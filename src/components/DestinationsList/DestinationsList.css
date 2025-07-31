@@ -1,3 +1,10 @@
+.destinations__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .card {
     width: 100%;
     height: 200px;

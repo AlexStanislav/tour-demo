@@ -110,7 +110,7 @@ function DestinationSearch() {
         labelString="Number of guests"
         inputAction={setGuests}
       />
-      <button className="button" type="submit" onClick={submitForm}><i className="icon__search"></i></button>
+      <button className="button" type="submit" onClick={submitForm} data-testid="search-button"><i className="icon__search"></i></button>
     </form>
   );
 }

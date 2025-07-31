@@ -10,7 +10,6 @@
     "country_code": "GR",
     "city": "Kalývia",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": [
       "bowling alley",
@@ -36,7 +35,6 @@
     "country_code": "FR",
     "city": "Cergy-Pontoise",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "city",
     "amenities": [
       "pool",
@@ -59,7 +57,6 @@
     "country_code": "FR",
     "city": "Cournon-d'Auvergne",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "karaoke",
     "location": "outdoors",
     "amenities": [
       "gym",
@@ -82,7 +79,6 @@
     "country_code": "GR",
     "city": "Néa Smýrni",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "beach",
     "amenities": [
       "arcade",
@@ -106,7 +102,6 @@
     "country_code": "US",
     "city": "Birmingham",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "city",
     "amenities": [
       "spa",
@@ -129,7 +124,6 @@
     "country_code": "FR",
     "city": "Domont",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "city",
     "amenities": ["library", "spa", "bowling alley"]
   },
@@ -144,7 +138,6 @@
     "country_code": "FR",
     "city": "Thiais",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "outdoors",
     "amenities": ["library"]
   },
@@ -159,7 +152,6 @@
     "country_code": "FR",
     "city": "Langres",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "outdoors",
     "amenities": [
       "bowling alley",
@@ -182,7 +174,6 @@
     "country_code": "FR",
     "city": "Mulhouse",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": ["bowling alley", "gym", "restaurant"]
   },
@@ -197,7 +188,6 @@
     "country_code": "IT",
     "city": "Cagliari",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "playground",
     "location": "outdoors",
     "amenities": [
       "restaurant",
@@ -221,7 +211,6 @@
     "country_code": "FR",
     "city": "Loudun",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "karaoke",
     "location": "beach",
     "amenities": ["bowling alley"]
   },
@@ -236,7 +225,6 @@
     "country_code": "US",
     "city": "Lansing",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "outdoors",
     "amenities": [
       "arcade",
@@ -261,7 +249,6 @@
     "country_code": "DE",
     "city": "Leipzig",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "outdoors",
     "amenities": [
       "cinema",
@@ -284,7 +271,6 @@
     "country_code": "FR",
     "city": "Beauvais",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "outdoors",
     "amenities": ["karaoke", "bowling alley", "restaurant", "arcade", "gym"]
   },
@@ -299,7 +285,6 @@
     "country_code": "GR",
     "city": "Palaió Fáliro",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "spa",
     "location": "city",
     "amenities": ["arcade", "karaoke", "restaurant", "playground", "cinema"]
   },
@@ -314,7 +299,6 @@
     "country_code": "FR",
     "city": "Sophia Antipolis",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "city",
     "amenities": [
       "bowling alley",
@@ -337,7 +321,6 @@
     "country_code": "FR",
     "city": "Abbeville",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "spa",
     "location": "outdoors",
     "amenities": ["playground", "karaoke"]
   },
@@ -352,7 +335,6 @@
     "country_code": "US",
     "city": "Olympia",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "pool",
     "location": "outdoors",
     "amenities": [
       "gym",
@@ -377,7 +359,6 @@
     "country_code": "BG",
     "city": "Zlatograd",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "pool",
     "location": "beach",
     "amenities": ["bowling alley", "arcade", "pool", "playground", "library"]
   },
@@ -392,7 +373,6 @@
     "country_code": "GB",
     "city": "Sheffield",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "city",
     "amenities": ["pool", "cinema", "gym", "bowling alley", "library"]
   },
@@ -407,7 +387,6 @@
     "country_code": "BG",
     "city": "Ikhtiman",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "beach",
     "amenities": [
       "karaoke",
@@ -432,7 +411,6 @@
     "country_code": "FR",
     "city": "Coutances",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "outdoors",
     "amenities": [
       "bowling alley",
@@ -454,7 +432,6 @@
     "country_code": "FR",
     "city": "Nevers",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "playground",
     "location": "city",
     "amenities": [
       "bowling alley",
@@ -480,7 +457,6 @@
     "country_code": "FR",
     "city": "Paris 03",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "outdoors",
     "amenities": ["gym", "restaurant", "bowling alley"]
   },
@@ -495,7 +471,6 @@
     "country_code": "US",
     "city": "Melbourne",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "outdoors",
     "amenities": [
       "bowling alley",
@@ -517,7 +492,6 @@
     "country_code": "US",
     "city": "Lafayette",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "beach",
     "amenities": [
       "pool",
@@ -541,7 +515,6 @@
     "country_code": "FR",
     "city": "Paris 12",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "beach",
     "amenities": [
       "arcade",
@@ -564,7 +537,6 @@
     "country_code": "HU",
     "city": "Miskolc",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "pool",
     "location": "outdoors",
     "amenities": [
       "restaurant",
@@ -589,7 +561,6 @@
     "country_code": "US",
     "city": "Milwaukee",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "outdoors",
     "amenities": ["bowling alley", "pool", "spa", "arcade"]
   },
@@ -604,7 +575,6 @@
     "country_code": "GR",
     "city": "Loukísia",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": [
       "gym",
@@ -629,7 +599,6 @@
     "country_code": "GR",
     "city": "Fotolívos",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "outdoors",
     "amenities": ["bowling alley", "spa", "karaoke"]
   },
@@ -644,7 +613,6 @@
     "country_code": "US",
     "city": "Lancaster",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "pool",
     "location": "outdoors",
     "amenities": ["cinema", "bowling alley", "restaurant"]
   },
@@ -659,7 +627,6 @@
     "country_code": "FR",
     "city": "Lille",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "beach",
     "amenities": ["spa", "cinema", "gym", "restaurant"]
   },
@@ -674,7 +641,6 @@
     "country_code": "US",
     "city": "Palatine",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "outdoors",
     "amenities": ["bowling alley", "library", "playground"]
   },
@@ -689,7 +655,6 @@
     "country_code": "GR",
     "city": "Áno Kopanákion",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": ["library", "cinema", "bowling alley", "spa", "restaurant"]
   },
@@ -704,7 +669,6 @@
     "country_code": "GR",
     "city": "Plagiári",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "city",
     "amenities": [
       "arcade",
@@ -727,7 +691,6 @@
     "country_code": "GR",
     "city": "Zákynthos",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "city",
     "amenities": [
       "arcade",
@@ -750,7 +713,6 @@
     "country_code": "BG",
     "city": "Nikopol",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "city",
     "amenities": [
       "arcade",
@@ -773,7 +735,6 @@
     "country_code": "US",
     "city": "Madison",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "city",
     "amenities": [
       "bowling alley",
@@ -796,7 +757,6 @@
     "country_code": "US",
     "city": "Minneapolis",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "outdoors",
     "amenities": ["arcade", "karaoke", "playground", "restaurant", "pool"]
   },
@@ -811,7 +771,6 @@
     "country_code": "FR",
     "city": "Mulhouse",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "spa",
     "location": "beach",
     "amenities": ["karaoke", "gym"]
   },
@@ -826,7 +785,6 @@
     "country_code": "FR",
     "city": "Suresnes",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "playground",
     "location": "beach",
     "amenities": ["bowling alley", "playground", "library", "karaoke"]
   },
@@ -841,7 +799,6 @@
     "country_code": "FR",
     "city": "Arbois",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": [
       "library",
@@ -865,7 +822,6 @@
     "country_code": "GR",
     "city": "Fílla",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "beach",
     "amenities": [
       "arcade",
@@ -891,7 +847,6 @@
     "country_code": "HU",
     "city": "Miskolc",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "outdoors",
     "amenities": ["gym", "playground", "restaurant", "spa", "pool", "arcade"]
   },
@@ -906,7 +861,6 @@
     "country_code": "GR",
     "city": "Triánta",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "city",
     "amenities": [
       "karaoke",
@@ -928,7 +882,6 @@
     "country_code": "GR",
     "city": "Morfovoúni",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "city",
     "amenities": ["restaurant", "karaoke", "spa"]
   },
@@ -943,7 +896,6 @@
     "country_code": "GR",
     "city": "Zákynthos",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "city",
     "amenities": ["arcade", "playground", "gym", "bowling alley"]
   },
@@ -958,7 +910,6 @@
     "country_code": "HU",
     "city": "Budapest",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "outdoors",
     "amenities": ["playground", "cinema", "gym"]
   },
@@ -973,7 +924,6 @@
     "country_code": "GR",
     "city": "Tríkala",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "beach",
     "amenities": ["playground"]
   },
@@ -988,7 +938,6 @@
     "country_code": "BG",
     "city": "Topolovgrad",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "city",
     "amenities": ["arcade", "cinema"]
   },
@@ -1003,7 +952,6 @@
     "country_code": "FR",
     "city": "Toul",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "outdoors",
     "amenities": [
       "bowling alley",
@@ -1028,7 +976,6 @@
     "country_code": "GR",
     "city": "Stratónion",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "outdoors",
     "amenities": ["cinema", "bowling alley"]
   },
@@ -1043,7 +990,6 @@
     "country_code": "US",
     "city": "Las Vegas",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "city",
     "amenities": ["library", "karaoke", "playground", "pool", "spa", "arcade"]
   },
@@ -1058,7 +1004,6 @@
     "country_code": "US",
     "city": "Maple Plain",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": ["cinema", "karaoke", "bowling alley"]
   },
@@ -1073,7 +1018,6 @@
     "country_code": "US",
     "city": "Springfield",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "outdoors",
     "amenities": ["restaurant", "arcade", "bowling alley", "pool", "gym"]
   },
@@ -1088,7 +1032,6 @@
     "country_code": "GR",
     "city": "Provatás",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "city",
     "amenities": ["cinema", "karaoke", "library"]
   },
@@ -1103,7 +1046,6 @@
     "country_code": "US",
     "city": "Baton Rouge",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "pool",
     "location": "city",
     "amenities": [
       "bowling alley",
@@ -1128,7 +1070,6 @@
     "country_code": "FR",
     "city": "Annecy",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "city",
     "amenities": ["karaoke", "library", "gym", "cinema", "restaurant", "spa"]
   },
@@ -1143,7 +1084,6 @@
     "country_code": "FR",
     "city": "Nice",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "outdoors",
     "amenities": ["arcade", "karaoke", "restaurant", "spa", "library"]
   },
@@ -1158,7 +1098,6 @@
     "country_code": "FR",
     "city": "Verdun",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "pool",
     "location": "city",
     "amenities": ["arcade", "restaurant", "pool", "spa", "gym", "karaoke"]
   },
@@ -1173,7 +1112,6 @@
     "country_code": "US",
     "city": "Washington",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "outdoors",
     "amenities": ["gym"]
   },
@@ -1188,7 +1126,6 @@
     "country_code": "FR",
     "city": "Sarrebourg",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "beach",
     "amenities": [
       "karaoke",
@@ -1211,7 +1148,6 @@
     "country_code": "US",
     "city": "Philadelphia",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "pool",
     "location": "beach",
     "amenities": ["playground", "pool", "arcade", "karaoke", "spa", "cinema"]
   },
@@ -1226,7 +1162,6 @@
     "country_code": "BG",
     "city": "Trŭn",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "beach",
     "amenities": [
       "arcade",
@@ -1248,7 +1183,6 @@
     "country_code": "ES",
     "city": "Granada",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "karaoke",
     "location": "outdoors",
     "amenities": [
       "pool",
@@ -1272,7 +1206,6 @@
     "country_code": "US",
     "city": "Brooklyn",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "beach",
     "amenities": [
       "playground",
@@ -1297,7 +1230,6 @@
     "country_code": "US",
     "city": "Albuquerque",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": ["karaoke", "gym", "pool"]
   },
@@ -1312,7 +1244,6 @@
     "country_code": "FR",
     "city": "Dijon",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "city",
     "amenities": ["bowling alley", "library", "gym", "karaoke"]
   },
@@ -1327,7 +1258,6 @@
     "country_code": "GB",
     "city": "Upton",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "beach",
     "amenities": ["bowling alley", "spa", "restaurant", "playground", "pool"]
   },
@@ -1342,7 +1272,6 @@
     "country_code": "FR",
     "city": "Taverny",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "outdoors",
     "amenities": ["bowling alley", "library", "karaoke", "spa", "gym", "cinema"]
   },
@@ -1357,7 +1286,6 @@
     "country_code": "GR",
     "city": "Prómachoi",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": ["bowling alley", "library", "karaoke"]
   },
@@ -1372,7 +1300,6 @@
     "country_code": "GR",
     "city": "Néa Mákri",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "outdoors",
     "amenities": [
       "cinema",
@@ -1397,7 +1324,6 @@
     "country_code": "US",
     "city": "Saint Louis",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "city",
     "amenities": [
       "cinema",
@@ -1420,7 +1346,6 @@
     "country_code": "US",
     "city": "Los Angeles",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "beach",
     "amenities": ["playground", "arcade", "karaoke", "restaurant"]
   },
@@ -1435,7 +1360,6 @@
     "country_code": "GR",
     "city": "Chrysoúpolis",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "beach",
     "amenities": ["restaurant", "arcade"]
   },
@@ -1450,7 +1374,6 @@
     "country_code": "ES",
     "city": "Logroño",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "outdoors",
     "amenities": [
       "bowling alley",
@@ -1473,7 +1396,6 @@
     "country_code": "US",
     "city": "Montgomery",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "city",
     "amenities": ["library", "arcade", "pool", "karaoke"]
   },
@@ -1488,7 +1410,6 @@
     "country_code": "US",
     "city": "Erie",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "city",
     "amenities": [
       "spa",
@@ -1513,7 +1434,6 @@
     "country_code": "US",
     "city": "Huntington",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "outdoors",
     "amenities": [
       "playground",
@@ -1536,7 +1456,6 @@
     "country_code": "US",
     "city": "Dayton",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "beach",
     "amenities": [
       "karaoke",
@@ -1559,7 +1478,6 @@
     "country_code": "US",
     "city": "Philadelphia",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "outdoors",
     "amenities": ["gym", "karaoke", "arcade"]
   },
@@ -1574,7 +1492,6 @@
     "country_code": "US",
     "city": "Houston",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "karaoke",
     "location": "beach",
     "amenities": [
       "library",
@@ -1600,7 +1517,6 @@
     "country_code": "US",
     "city": "Daytona Beach",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "restaurant",
     "location": "city",
     "amenities": [
       "pool",
@@ -1626,7 +1542,6 @@
     "country_code": "FR",
     "city": "Champigny-sur-Marne",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "playground",
     "location": "beach",
     "amenities": [
       "spa",
@@ -1651,7 +1566,6 @@
     "country_code": "GR",
     "city": "Kalýves Polygýrou",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "outdoors",
     "amenities": ["spa", "cinema", "library", "karaoke"]
   },
@@ -1666,7 +1580,6 @@
     "country_code": "GR",
     "city": "Loutráki",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "karaoke",
     "location": "city",
     "amenities": ["bowling alley", "library", "karaoke", "cinema"]
   },
@@ -1681,7 +1594,6 @@
     "country_code": "FR",
     "city": "Lyon",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "outdoors",
     "amenities": ["karaoke", "arcade"]
   },
@@ -1696,7 +1608,6 @@
     "country_code": "FR",
     "city": "Chenôve",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "bowling alley",
     "location": "city",
     "amenities": ["spa"]
   },
@@ -1711,7 +1622,6 @@
     "country_code": "US",
     "city": "Pasadena",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "spa",
     "location": "outdoors",
     "amenities": ["pool", "cinema"]
   },
@@ -1726,7 +1636,6 @@
     "country_code": "FR",
     "city": "Saint-Jouan-des-Guérets",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "beach",
     "amenities": ["karaoke", "bowling alley", "arcade", "playground", "pool"]
   },
@@ -1741,7 +1650,6 @@
     "country_code": "US",
     "city": "Knoxville",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "city",
     "amenities": ["bowling alley"]
   },
@@ -1756,7 +1664,6 @@
     "country_code": "FR",
     "city": "Calais",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "outdoors",
     "amenities": ["arcade", "gym", "spa"]
   },
@@ -1771,7 +1678,6 @@
     "country_code": "FR",
     "city": "Marne-la-Vallée",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "playground",
     "location": "outdoors",
     "amenities": ["cinema"]
   },
@@ -1786,7 +1692,6 @@
     "country_code": "FR",
     "city": "Orléans",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "arcade",
     "location": "beach",
     "amenities": [
       "playground",
@@ -1810,7 +1715,6 @@
     "country_code": "FR",
     "city": "Amiens",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "karaoke",
     "location": "outdoors",
     "amenities": ["spa"]
   },
@@ -1825,7 +1729,6 @@
     "country_code": "US",
     "city": "Montgomery",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "library",
     "location": "outdoors",
     "amenities": [
       "playground",
@@ -1848,7 +1751,6 @@
     "country_code": "BG",
     "city": "Yambol",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "spa",
     "location": "beach",
     "amenities": ["bowling alley", "spa", "arcade", "library", "pool"]
   },
@@ -1863,7 +1765,6 @@
     "country_code": "FR",
     "city": "Nanterre",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "cinema",
     "location": "city",
     "amenities": [
       "pool",
@@ -1885,7 +1786,6 @@
     "country_code": "FR",
     "city": "Saint-Brieuc",
     "image": "https://picsum.photos/1920/1080?random=",
-    "amenity_type": "gym",
     "location": "outdoors",
     "amenities": ["cinema", "karaoke", "library", "spa", "restaurant", "pool"]
   }
