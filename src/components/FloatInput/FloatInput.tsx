@@ -1,11 +1,9 @@
 import "./FloatInput.css";
-import { useRef, useState, useEffect } from "react";
-import { useOutsideComponentEvent } from "../../utils/methods";
-import type { FormEvent } from "react";
+import { useRef, useState } from "react";
 import type { FloatInputProps } from "../../utils/types";
 
 function FloatInput({
-  value,
+  inputValue,
   inputID,
   inputType,
   labelString,
@@ -14,21 +12,22 @@ function FloatInput({
 }: FloatInputProps) {
   const autocompleteRef = useRef(null);
   const inputRef = useRef(null);
-  useOutsideComponentEvent(autocompleteRef, closeAutocomplete);
 
   const [showAutocomplete, setShowAutocomplete] = useState(false);
 
-  useEffect(() => {
-    setShowAutocomplete(!!autocompleteValues?.length);
-  }, [autocompleteValues]);
+  function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
+    inputAction(event.target.value);
+    if (event.target.value) {
+      setShowAutocomplete(true);
+    }
 
-  function getValue(event: FormEvent<HTMLInputElement>) {
-    const element = event.target as HTMLInputElement;
-    inputAction(element.value);
-  }
+    if (!event.target.value) {
+      setShowAutocomplete(false);
+    }
 
-  function closeAutocomplete() {
-    setShowAutocomplete(false);
+    if (!autocompleteValues) {
+      setShowAutocomplete(false);
+    }
   }
 
   function selectAutocompleteValue(destination: string) {
@@ -45,12 +44,12 @@ function FloatInput({
       <input
         data-testid={`test-${inputID}`}
         className="float-element__input"
-        value={value}
+        value={inputValue}
         ref={inputRef}
         id={inputID}
         type={inputType}
         required
-        onInput={getValue}
+        onInput={handleInputChange}
       />
       <label className="float-element__label" htmlFor={inputID}>
         {labelString}

@@ -186,7 +186,7 @@ function Destination() {
             <tr>
               <td colSpan={2}>
                 <FloatInput
-                  value={formValues.guests}
+                  inputValue={formValues.guests}
                   inputID="guests"
                   inputType="number"
                   labelString="Number of guests"
@@ -199,7 +199,7 @@ function Destination() {
             <tr>
               <td>
                 <FloatInput
-                  value={formValues.checkIn}
+                  inputValue={formValues.checkIn}
                   inputID="checkIn"
                   inputType="date"
                   labelString="Check-in"
@@ -210,7 +210,7 @@ function Destination() {
               </td>
               <td>
                 <FloatInput
-                  value={formValues.checkOut}
+                  inputValue={formValues.checkOut}
                   inputID="checkOut"
                   inputType="date"
                   labelString="Check-out"

@@ -1,5 +1,5 @@
 import "./Destinations.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useDestinations } from "../../store/appStore";
 import RangeSlider from "../../components/RangeSlider/RangeSlider";
 import CheckBox from "../../components/CheckBox/CheckBox";
@@ -9,7 +9,6 @@ import type { FiltersType } from "../../utils/types";
 
 function Destinations() {
   const destinations = useDestinations();
-  const [displayDestinations, setDisplayDestinations] = useState(destinations);
   const [loadedIndex, setLoadedIndex] = useState(10);
 
   const minPrice = destinations.reduce(
@@ -100,19 +99,19 @@ function Destinations() {
     checked: boolean;
     value: string;
   }) {
-    if (data.name !== "rating") {
-      setFilters((prevFilters) => {
-        return parseFilters(prevFilters, data);
-      });
-    } else {
+    if (data.name == "rating") {
       setFilters((prevFilters) => ({
         ...prevFilters,
         rating: data.checked ? getRating(data) : 0,
       }));
+    } else {
+      setFilters((prevFilters) => {
+        return parseFilters(prevFilters, data);
+      });
     }
   }
 
-  useEffect(() => {
+  function filterDestinations() {
     const filteredDestinations = destinations.filter((dest) => {
       const searchMatch = dest.name
         .toLowerCase()
@@ -149,8 +148,9 @@ function Destinations() {
         amenitiesMatch
       );
     });
-    setDisplayDestinations(filteredDestinations);
-  }, [filters, destinations]);
+
+    return filteredDestinations;
+  }
 
   function clearFilter(filterKey: keyof FiltersType) {
     if (typeof filters[filterKey] === "number") {
@@ -291,10 +291,10 @@ function Destinations() {
       </nav>
       <section className="destinations__list">
         <header className="destinations__header"></header>
-          <DestinationsList
-            destinations={displayDestinations}
-            loadedIndex={loadedIndex}
-          />
+        <DestinationsList
+          destinations={filterDestinations()}
+          loadedIndex={loadedIndex}
+        />
         <div className="destinations__load">
           <InView
             as="div"
@@ -306,7 +306,7 @@ function Destinations() {
           ></InView>
         </div>
         <div className="destinations__overlay">
-          {displayDestinations.length === 0 &&
+          {filterDestinations().length === 0 &&
             "No destinations match your search criteria."}
         </div>
       </section>

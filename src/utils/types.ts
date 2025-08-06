@@ -44,7 +44,7 @@ export interface CheckBoxProps {
 }
 
 export interface FloatInputProps {
-  value?: string;
+  inputValue?: string;
   inputID: string;
   inputType: string;
   labelString: string;

@@ -1,17 +1,23 @@
 import "./DestinationSearch.css";
 import FloatInput from "../FloatInput/FloatInput";
+import { useNavigate } from "react-router-dom";
 import { useDestinations } from "../../store/appStore";
 import { useState } from "react";
 import { useDestinationSearch } from "../../store/appStore";
 import type { DestinationSearchType } from "../../utils/types";
-import { useNavigate } from "react-router-dom";
+import { DestinationSearchInitialState } from "../../store/appStore";
 
 function DestinationSearch() {
   const navigate = useNavigate();
   const destinations = useDestinations();
-  const [autocompleteDestinations, setAutocompleteDestinations] = useState<string[]>([]);
+  const [autocompleteDestinations, setAutocompleteDestinations] = useState<
+    string[]
+  >([]);
+  const [searchValues, setSearchValues] = useState<DestinationSearchType>(
+    DestinationSearchInitialState
+  );
 
-  const [destinationSearchValue, destinationSearchDispatch] =
+  const [, destinationSearchDispatch] =
     useDestinationSearch() as [
       DestinationSearchType,
       React.Dispatch<{ type: string; payload: DestinationSearchType }>
@@ -26,49 +32,34 @@ function DestinationSearch() {
       );
       const destinationNames = filteredDestinations.map((dest) => dest.name);
       setAutocompleteDestinations(destinationNames);
-      destinationSearchDispatch({
-        type: "SET_DESTINATION",
-        payload: {
-          ...destinationSearchValue,
-          destination: destinationNames[0],
-        },
-      });
+      setSearchValues((prevValues) => ({
+        ...prevValues,
+        destination: destination,
+      }));
     }
   }
 
   function setCheckIn(checkIn: string) {
-    destinationSearchDispatch({
-      type: "SET_DESTINATION",
-      payload: {
-        ...destinationSearchValue,
-        checkIn: checkIn,
-      },
-    });
+    setSearchValues((prevValues) => ({ ...prevValues, checkIn: checkIn }));
   }
 
   function setCheckOut(checkOut: string) {
-    destinationSearchDispatch({
-      type: "SET_DESTINATION",
-      payload: {
-        ...destinationSearchValue,
-        checkOut: checkOut,
-      },
-    });
+    setSearchValues((prevValues) => ({ ...prevValues, checkOut: checkOut }));
   }
 
   function setGuests(guests: number) {
-    destinationSearchDispatch({
-      type: "SET_DESTINATION",
-      payload: {
-        ...destinationSearchValue,
-        guests: guests,
-      },
-    });
+    setSearchValues((prevValues) => ({ ...prevValues, guests: guests }));
   }
 
   function submitForm() {
-    const destination = destinations.find((dest) => dest.name === destinationSearchValue.destination);
-    if (destination) navigate(`/destination/${destination.id}`);
+    const destination = destinations.find(
+      (dest) => dest.name === searchValues.destination
+    );
+    console.log(destination);
+    if (destination) {
+      destinationSearchDispatch({ type: "SET_DESTINATION", payload: searchValues });
+      navigate(`/destination/${destination.id}`);
+    }
   }
 
   return (
@@ -110,7 +101,14 @@ function DestinationSearch() {
         labelString="Number of guests"
         inputAction={setGuests}
       />
-      <button className="button" type="submit" onClick={submitForm} data-testid="search-button"><i className="icon__search"></i></button>
+      <button
+        className="button"
+        type="submit"
+        onClick={submitForm}
+        data-testid="search-button"
+      >
+        <i className="icon__search"></i>
+      </button>
     </form>
   );
 }
