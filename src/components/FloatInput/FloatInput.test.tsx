@@ -7,7 +7,7 @@ describe("FloatInput component", () => {
     it("renders a custom input with a float label", () => {
         render(
             <FloatInput
-                value={""}
+                inputValue={""}
                 inputID={"testInput"}
                 inputType={"text"}
                 labelString={"Test Input"}
@@ -25,7 +25,7 @@ describe("FloatInput component", () => {
         const inputAction = vi.fn(() => {});
         render(
             <FloatInput
-                value={""}
+                inputValue={""}
                 inputID={"testInput"}
                 inputType={"text"}
                 labelString={"Test Input"}
@@ -45,7 +45,7 @@ describe("FloatInput component", () => {
     it("renders an autocomplete list when input is typed", () => {
         render(
             <FloatInput
-                value={""}
+                inputValue={""}
                 inputID={"testInput"}
                 inputType={"text"}
                 labelString={"Test Input"}
@@ -65,7 +65,7 @@ describe("FloatInput component", () => {
     it("hides the autocomplete list when input is cleared", () => {
         render(
             <FloatInput
-                value={""}
+                inputValue={""}
                 inputID={"testInput"}
                 inputType={"text"}
                 labelString={"Test Input"}
@@ -89,7 +89,7 @@ describe("FloatInput component", () => {
         const inputAction = vi.fn(() => {});
         render(
             <FloatInput
-                value={""}
+                inputValue={""}
                 inputID={"testInput"}
                 inputType={"text"}
                 labelString={"Test Input"}
